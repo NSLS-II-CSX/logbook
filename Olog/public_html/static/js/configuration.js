@@ -155,7 +155,7 @@ var selectedElements = {};
 var ologSettings = {};
 
 // Should history be included by default
-var includeHistory = true;
+var includeHistory = false;
 
 // URL parameter for displaying log's history
 var historyParameter = "history";
