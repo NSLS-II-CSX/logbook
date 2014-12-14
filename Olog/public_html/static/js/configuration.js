@@ -13,7 +13,7 @@
 var version = "0.5";
 
 // For accessing the REST service
-var serviceurl = window.location.protocol + "//" + window.location.host + "/Olog/resources/";
+var serviceurl = "https://xf23id-ca.cs.nsls2.local:8181/Olog/resources/";
 
 // For all the dates shown in client
 // Format docs can be found at http://momentjs.com/docs/#/displaying/format/
@@ -118,10 +118,10 @@ var backwardImageSizesMap = {
 // Update interval in seconds. After this time has elapsed system will check if
 // new Log entries were created. If updateInterval is set to -1, checking will
 // be disabled.
-var updateInterval = 60;
+var updateInterval = 10;
 
 // Settings cookie name
-var settingsCookieName = "olog";
+var settingsCookieName = "xf23id1-olog";
 
 // Maximum width of small resolution. If Olog will be displayed in smaller
 // width, panes will be stacked one upon each other and filters will be closed.
@@ -155,7 +155,7 @@ var selectedElements = {};
 var ologSettings = {};
 
 // Should history be included by default
-var includeHistory = true;
+var includeHistory = false;
 
 // URL parameter for displaying log's history
 var historyParameter = "history";
